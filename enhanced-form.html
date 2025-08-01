@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoCAD Training Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; line-height: 1.6; background-color: #f5f5f5; }
+        fieldset { margin-bottom: 1.5em; }
+        table, th, td { border: 1px solid #ccc; border-collapse: collapse; padding: 0.5em; }
+        label { display: block; margin-top: 0.5em; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AutoCAD Course Enrollment</h1>
+        <p>Welcome to our registration portal. </p>
+        <p>This training program focuses on technical drawing and computer-aided design using AutoCAD.</p>
+    </header>
+
+    <main>
+
+        <!-- Instruction List -->
+        <section>
+            <h2>📋 Course Objectives</h2>
+            <ul list-style-type="square">
+                <li>Master 2D and 3D drafting with AutoCAD</li>
+                <li>Understand architectural and engineering drawing principles</li>
+                <li>Earn a professional certificate upon completion</li>
+            </ul>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>📊 Available Training Packages</h2>
+            <table >
+                <thead>
+                    <tr><th>Package</th><th>Duration</th><th>Delivery</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>AutoCAD Essentials</td><td>4 Weeks</td><td>Online</td></tr>
+                    <tr><td>Advanced AutoCAD + Project</td><td>8 Weeks</td><td>In-Person</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>🎥 Media Showcase</h2>
+
+            <!-- Video Demonstration -->
+            <figure>
+                <figcaption>AutoCAD Interface Tour</figcaption>
+                    <iframe width="300" height="234"
+                     src="https://www.youtube.com/embed/fB8r6Ss1LCY?start=27"
+                     title="YouTube video player" frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen>
+                </iframe>
+            </figure>
+
+            <!-- Image Asset -->
+            <figure>
+                <figcaption>AutoCAD Workspace</figcaption>
+                <img src="https://mgfx.co.za/wp-content/uploads/2024/04/image-8.png" alt="AutoCAD software interface" width="300">
+            </figure>
+
+            <!-- Sample Drawing Audio Explanation -->
+            <figure>
+                <figcaption>Design Relaxing Sound</figcaption>
+                <audio controls>
+                    <source src="audio/my-audio.wav" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </figure>
+        </section>
+
+        <!-- HTML5 Form Section -->
+        <section>
+            <h2>📝 Enrollment Form</h2>
+            <form action="#" method="post" autocomplete="on" style="width: fit-content;">
+
+                <!-- Personal Info -->
+                <fieldset>
+                    <legend>Participant Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Edward Johnson">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="edward@example.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+2348012345678" pattern="\+?\d{11,15}">
+                </fieldset>
+
+                <!-- Additional Details -->
+                <fieldset>
+                    <legend>Technical Background</legend>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="bio">Design Experience:</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Mention your experience with AutoCAD, drafting, or design tools..."></textarea>
+                </fieldset>
+
+                <!-- Preferences -->
+                <fieldset>
+                    <legend>Course Preferences</legend>
+
+                    <label for="username">Assigned Candidate ID:</label>
+                    <input type="text" id="username" name="username" value="AutoCAD-Edward2025" readonly>
+
+                    <label for="package">Select Training Package:</label>
+                    <select id="package" name="package" required>
+                        <option value="">Choose package...</option>
+                        <option value="essentials">AutoCAD Essentials</option>
+                        <option value="advanced">Advanced + Project</option>
+                    </select>
+
+                    <label for="newsletter">Join our newsletter for tips:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Register for Course</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 AutoCAD Training by Edward Design Academy</p>
+    </footer>
+
+</body>
+</html>
